@@ -1,8 +1,3 @@
----
-layout: default
-title: README
----
-
 # Portfolio & Personal Website
 
 Welcome to the repository for my personal website and portfolio. This site serves as a central hub for my technical write-ups, open-source framework documentation, and machine learning systems research.
