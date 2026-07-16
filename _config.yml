@@ -1,0 +1,14 @@
+# Site Settings
+title: ML Engineering Portfolio
+description: Technical case studies, engineering logs, and open-source machine learning tooling.
+theme: minima # The clean, standard default theme for GitHub Pages
+
+# Build Settings
+markdown: kramdown
+highlighter: rouge # Enables native, high-contrast code syntax highlighting
+
+# Navigation Control
+header_pages:
+  - index.md
+  - projects.md
+  - blog.md

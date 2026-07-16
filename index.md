@@ -21,9 +21,9 @@ My expertise encompasses:
 
 ## 🛠️ Featured Projects
 
+* **[Industrial Anomaly Detection](https://github.com/slam-wise/anomaly-detection-mvtec):** A high-precision computer vision architecture utilizing patch embedding memory banks for automated defect inspection.
 * **[LLM-RAG-Eval](https://github.com/slam-wise/llm-rag-eval):** An automated offline evaluation and diagnostics framework measuring key RAG performance capability metrics.
 * **[Crystal Lattice GNN](https://github.com/slam-wise/crystal-lattice-gnn):** A physics-informed Graph Neural Network pipeline modeling solid-state crystal structures under periodic boundary conditions.
-* **[Industrial Anomaly Detection](https://github.com/slam-wise/anomaly-detection-mvtec):** A high-precision computer vision architecture utilizing patch embedding memory banks for automated defect inspection.
 
 ---
 
