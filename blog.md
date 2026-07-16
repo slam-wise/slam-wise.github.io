@@ -1,16 +1,9 @@
 ---
-layout: page
+layout: home
 title: Blog
 permalink: /blog/
 ---
 
-# Engineering Log
+# Engineering Logs & Technical Insights
 
-Short deep dives into backend performance optimization, high-variability data processing, and technical lessons learned from system builds.
-
-## Recent Logs
-{% for post in site.posts %}
-* **{{ post.date | date: "%b %d, %Y" }}** — [{{ post.title }}]({{ post.url }})
-{% else %}
-*No logs published yet. First entry coming shortly.*
-{% endfor %}
+A collection of system design breakdowns, optimization notes, and practical findings from building machine learning systems.
