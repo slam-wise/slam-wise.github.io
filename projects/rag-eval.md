@@ -32,21 +32,33 @@ The framework isolates the performance of the retrieval mechanism from the gener
 
 ## 🏗️ Architectural Decisions & Trade-Offs
 
-                      +-------------------+
-                      |   Evaluation Run  |
-                      +---------+---------+
-                                |
-        +-----------------------+-----------------------+
-        |                                               |
-        v                                               v
-+-------+-------+                               +-------+-------+
-|  Retrieval    |                               |  Generation   |
-|  Diagnostics  |                               |  Verification |
-+-------+-------+                               +-------+-------+
-        |                                               |
-        v                                               v
-Cosine Vector Similarity                       Assertion Fact-Checking
-Semantic Overlap Scoring                       Prompt Realignment Tracking
+```
+mermaid
+graph TD
+    %% Define Nodes
+    Run[Evaluation Run]
+    Ret[Retrieval Diagnostics]
+    Gen[Generation Verification]
+    Sim[Cosine Vector Similarity]
+    Sem[Semantic Overlap Scoring]
+    Fact[Assertion Fact-Checking]
+    Prompt[Prompt Realignment Tracking]
+
+    %% Build Hierarchy
+    Run --> Ret
+    Run --> Gen
+    
+    Ret --> Sim
+    Ret --> Sem
+    
+    Gen --> Fact
+    Gen --> Prompt
+
+    %% Minimalist Style Overrides
+    style Run fill:#f9f9f9,stroke:#333,stroke-width:2px
+    style Ret fill:#fff,stroke:#666,stroke-width:1px
+    style Gen fill:#fff,stroke:#666,stroke-width:1px
+```
 
 ### Provider-Agnostic Abstraction Layer
 The evaluation framework abstracts model dependencies, allowing engineering teams to swap local evaluation backends (e.g., self-hosted Hugging Face models) with cloud-hosted LLM APIs seamlessly. This design isolates evaluation logic from the underlying model runtime, allowing the pipeline to scale linearly as new architectures emerge.
