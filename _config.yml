@@ -12,7 +12,3 @@ header_pages:
   - index.md
   - projects.md
   - blog.md
-
-# Use custom stylesheet over default theme layout
-sass:
-  sass_dir: _sass
