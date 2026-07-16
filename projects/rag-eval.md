@@ -32,8 +32,7 @@ The framework isolates the performance of the retrieval mechanism from the gener
 
 ## 🏗️ Architectural Decisions & Trade-Offs
 
-```
-mermaid
+```mermaid
 graph TD
     %% Define Nodes
     Run[Evaluation Run]
@@ -57,8 +56,7 @@ graph TD
     %% Minimalist Style Overrides
     style Run fill:#f9f9f9,stroke:#333,stroke-width:2px
     style Ret fill:#fff,stroke:#666,stroke-width:1px
-    style Gen fill:#fff,stroke:#666,stroke-width:1px
-```
+    style Gen fill:#fff,stroke:#666,stroke-width:1px```
 
 ### Provider-Agnostic Abstraction Layer
 The evaluation framework abstracts model dependencies, allowing engineering teams to swap local evaluation backends (e.g., self-hosted Hugging Face models) with cloud-hosted LLM APIs seamlessly. This design isolates evaluation logic from the underlying model runtime, allowing the pipeline to scale linearly as new architectures emerge.
